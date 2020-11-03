@@ -1,0 +1,276 @@
+body {
+  background-color: #2e2a2a;
+  font-family: 'Turret Road';
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Turret Road';
+  font-size: 15px;
+}
+
+.Page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 580px 750px auto;
+      grid-template-rows: auto 580px 750px auto;
+  text-align: center;
+}
+
+.Page h1 {
+  font-size: 1.2rem;
+}
+
+.Page header {
+  padding-top: 1%;
+  padding-right: 1%;
+  font-size: 1.2rem;
+}
+
+.Page header .topnav {
+  position: relative;
+  overflow: hidden;
+}
+
+.Page header .topnav a {
+  color: white;
+  padding: 2px 2px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.Page header .topnav #icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.Page header .topnav #myLinks {
+  display: none;
+}
+
+.Page header .topnav .navbarDesktop {
+  display: inline;
+}
+
+.Page header .topnav .navbarDesktop:nth-child(2) {
+  display: none;
+}
+
+.Page header .topnav .navbarDesktop:nth-child(3) {
+  display: none;
+}
+
+.Page section #container {
+  margin-top: 60%;
+  padding-bottom: 70%;
+  margin-left: 35%;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Page section #container .tail {
+  width: 5px;
+  height: 5px;
+  background-color: rgba(140, 81, 194, 0.432);
+}
+
+.Page section {
+  position: relative;
+}
+
+.Page section #Technologies {
+  margin-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100px 100px;
+      grid-template-columns: 100px 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.Page section #Technologies h1 {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.Page section #Technologies .icon {
+  margin: 5%;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.Page section #Technologies .icon img {
+  padding-bottom: 3%;
+  height: 40px;
+  width: 40px;
+}
+
+.Page section #Technologies .icon img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.Page section #Projects {
+  margin-top: 3%;
+  position: relative;
+  text-align: center;
+}
+
+.Page section #Projects a {
+  color: white;
+  font-size: 3rem;
+  line-height: 50px;
+}
+
+.Page section #Projects a i:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.Page footer {
+  font-size: 1rem;
+}
+
+.Page footer a i {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.Page footer a i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+@media (min-width: 360px) {
+  .Page section #container {
+    margin-left: 40%;
+    margin-top: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .Page header .topnav a {
+    color: white;
+    padding: 2px 2px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+  }
+  .Page header .topnav #icon {
+    display: none;
+  }
+  .Page header .topnav .navbarDesktop {
+    display: inline;
+  }
+  .Page header .topnav .navbarDesktop:nth-child(2) {
+    display: inline;
+  }
+  .Page header .topnav .navbarDesktop:nth-child(3) {
+    display: inline;
+  }
+  .Page section #container {
+    margin-left: 45%;
+    margin-top: 25%;
+  }
+  .Page section #Technologies {
+    -ms-grid-columns: 100px 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px 100px;
+  }
+  .Page section #Technologies .icon img {
+    padding-bottom: 3%;
+    height: 50px;
+    width: 50px;
+  }
+  .Page section #Technologies .icon img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .Page section #container {
+    margin-left: 33%;
+    margin-top: 20%;
+    width: 200px;
+    height: 200px;
+  }
+  .Page section #container .tail {
+    width: 10px;
+    height: 10px;
+  }
+  .Page section {
+    font-size: 1.5rem;
+  }
+  .Page section #AboutMe {
+    margin-bottom: 3%;
+  }
+  .Page section #Technologies {
+    -ms-grid-columns: 120px 120px 120px 120px 120px 120px 120px;
+        grid-template-columns: 120px 120px 120px 120px 120px 120px 120px;
+  }
+  .Page section #Technologies .icon {
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .Page section #Technologies .icon img {
+    padding-bottom: 10%;
+    height: 60px;
+    width: 60px;
+  }
+  .Page section #Technologies .icon img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media (min-width: 1440px) {
+  .Page {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto 950px 840px;
+        grid-template-rows: auto 950px 840px;
+  }
+  .Page h1 {
+    font-size: 1.5rem;
+  }
+  .Page header {
+    font-size: 1.7rem;
+  }
+  .Page section #container {
+    margin-left: 44%;
+    margin-top: 15%;
+  }
+  .Page section section #Technologies {
+    -ms-grid-columns: 100px 100px 100px 100px 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px 100px;
+  }
+  .Page section section #Technologies .icon img {
+    padding-bottom: 3%;
+    height: 60px;
+    width: 60px;
+  }
+  .Page section section #Technologies .icon img:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@media (min-width: 2560px) {
+  .Page section #container {
+    margin-left: 48%;
+    margin-top: 7%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
