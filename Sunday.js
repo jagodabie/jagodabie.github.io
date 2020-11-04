@@ -90,6 +90,37 @@ for (let i = 0; i < field; i ++ ){
 }
 stage.appendChild(fragment);
 
+if (window.screen.width <= 360) {
+  const stageAnimation = anime
+  .timeline({
+    targets: '.tail',
+    easing: "easeInBack", 
+    delay: anime.stagger(10, {from: "last"}),
+    duration: 2000,
+    endDelay: 1000, 
+    loop: true, 
+    autoplay: false,      
+    })
+  .add({
+    translateX: () => anime.random(-100,100),
+    translateY: () => anime.random(-100,100),
+    delay: anime.stagger(50, {grid: grid, from: 'last'
+    }),
+    scale: 0.5, 
+    backgroundColor:'hsla(229, 48%, 54%, 0.432)',
+    borderRadius:'50%'
+})
+.add({
+  translateX: 0,
+  translateY: 0,
+  delay: anime.stagger(100, {grid: grid, from: 
+  "center"}), 
+  duration: 2000, 
+  backgroundColor: 'hsla(271, 48%, 54%, 0.432)',
+}) 
+}
+stageAnimation.play()
+
 const stageAnimation = anime
     .timeline({
     targets: '.tail',
@@ -101,7 +132,6 @@ const stageAnimation = anime
     autoplay: false,
 
     })
-
     .add({
         translateX: () => anime.random(-200,200),
         translateY: () => anime.random(-200,200),
@@ -123,7 +153,7 @@ const stageAnimation = anime
         backgroundColor: 'hsla(271, 48%, 54%, 0.432)',
       }) 
 
-    stageAnimation.play()
+      
 
 
 
